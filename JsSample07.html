@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>titSample07</title>
+</head>
+
+<body>
+    <h1>Donde inserto Java Script? Escrito en body</h1>
+    <p id="idSample07"> Este texto debe aparece antes de click en el siguiente boton:</p>
+    <button type="button" onclick="MiFuncion()">Presione Aqui</button>
+
+    <script>
+        function MiFuncion() {
+            document.getElementById('idSample07')
+                .innerHTML = 'Este texto aparecio cuando se dio click en el boton.';
+        }
+    </script>
+</body>
+
+</html>
